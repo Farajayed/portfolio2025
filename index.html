@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - QASSAB Faraj</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* CSS intégré minimal pour le chargement initial */
+        :root {
+            --primary: #4361ee;
+            --secondary: #3a0ca3;
+            --accent: #f72585;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --text: #2b2d42;
+            --text-light: #8d99ae;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: #f8f9fa;
+        }
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--secondary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>QASSAB Faraj</h1>
+            <p>Technicien Systèmes & Réseaux en Alternance</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#formation">Formation</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#entreprise">Entreprise</a></li>
+                    <li><a href="#fonction">Fonction</a></li>
+                    <li><a href="#missions">Missions</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#veille">Veille</a></li>
+                    <li><a href="#contact">Contact</a></li>            
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeInDown">Transformez vos idées en réalité numérique</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-1s">Expert en solutions informatiques innovantes</p>
+                <a href="#contact" class="cta-button animate__animated animate__fadeInUp animate__delay-2s">Contactez-moi</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/coding.svg" alt="Développement" class="animate__animated animate__fadeInRight">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Bienvenue sur mon portfolio ! Je suis QASSAB Faraj, étudiant en BTS Services Informatiques aux Organisations (SIO) en alternance à l'IUT Lyon 1.</p>
+                    <p>Actuellement en poste au sein du Service des Matériels, Informatique et Réseau (SMIR), je mets en pratique mes compétences en maintenance informatique, gestion de parc et support utilisateur.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/profile.jpg" alt="Photo de QASSAB Faraj">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formation -->
+    <section id="formation" class="section">
+        <div class="container">
+            <h2 class="section-title">Formation</h2>
+            
+            <div class="formation-block">
+                <div class="formation-header">
+                    <h3>BTS Services Informatiques aux Organisations (SIO)</h3>
+                    <p class="formation-subtitle">IUT Lyon 1 - Alternance | 2023-2025</p>
+                    <p class="formation-specialite">Spécialité : SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</p>
+                </div>
+                
+                <div class="formation-content">
+                    <div class="formation-details">
+                        <h4>Modules principaux :</h4>
+                        <ul class="module-list">
+                            <li>
+                                <i class="fas fa-server"></i>
+                                <strong>Administration des systèmes et réseaux</strong>
+                                <p>Gestion des infrastructures, virtualisation, services réseau</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-shield-alt"></i>
+                                <strong>Cybersécurité</strong>
+                                <p>Politiques de sécurité, authentification, protection des données</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-code"></i>
+                                <strong>Développement et scripts</strong>
+                                <p>Automatisation des tâches avec PowerShell, Bash et Python</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-project-diagram"></i>
+                                <strong>Gestion de projet</strong>
+                                <p>Méthodologies et outils de gestion de projets informatiques</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="formation-image">
+                        <img src="assets/images/formation.jpg" alt="Formation en informatique">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Compétences Techniques</h2>
+            
+            <div class="competences-grid">
+                <!-- Compétence 1 -->
+                <div class="competence-card">
+                    <div class="competence-icon">
+                        <i class="fab fa-windows"></i>
+                        <i class="fab fa-apple"></i>
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3>Systèmes d'exploitation</h3>
+                    <ul>
+                        <li>Windows 10/11 et Windows Server</li>
+                        <li>MacOS</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                
+                <!-- Compétence 2 -->
+                <div class="competence-card">
+                    <div class="competence-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Administration Réseau</h3>
+                    <ul>
+                        <li>Brassage et configuration de ports</li>
+                        <li>Gestion des VLANs</li>
+                        <li>Maintenance de 550 postes</li>
+                    </ul>
+                </div>
+                
+                <!-- Compétence 3 -->
+                <div class="competence-card">
+                    <div class="competence-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Déploiement</h3>
+                    <ul>
+                        <li>Outils WAPT et FOG</li>
+                        <li>Déploiement d'images système</li>
+                        <li>Installation centralisée de logiciels</li>
+                    </ul>
+                </div>
+                
+                <!-- Compétence 4 -->
+                <div class="competence-card">
+                    <div class="competence-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Scripting</h3>
+                    <ul>
+                        <li>PowerShell</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                
+                <!-- Compétence 5 -->
+                <div class="competence-card">
+                    <div class="competence-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Support Utilisateur</h3>
+                    <ul>
+                        <li>Formation aux outils</li>
+                        <li>Assistance technique</li>
+                        <li>Rédaction de procédures</li>
+                    </ul>
+                </div>
+                
+                <!-- Compétence 6 -->
+                <div class="competence-card">
+                    <div class="competence-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Audiovisuel</h3>
+                    <ul>
+                        <li>Gestion de 70 vidéoprojecteurs</li>
+                        <li>Systèmes de diffusion</li>
+                        <li>Support en salle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Entreprise -->
+    <section id="entreprise" class="section">
+        <div class="container">
+            <h2 class="section-title">Expérience en Alternance</h2>
+            
+            <div class="entreprise-presentation">
+                <h3>Université Claude Bernard Lyon 1 - IUT de Bourg-en-Bresse</h3>
+                <p class="entreprise-description">L’Université Claude Bernard Lyon 1 (UCBL) est un établissement public d’enseignement supérieur. Je suis actuellement affecté à l’Institut Universitaire de Technologie (IUT) de Bourg-en-Bresse, au sein du service « Services Matériels Informatiques et Réseaux » (SMIR).
+
+                    A pour mission principale d'assurer la gestion, la maintenance et l’évolution de l’infrastructure informatique pour :</p>
+                
+                <div class="entreprise-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">70</div>
+                        <div class="stat-label">vidéoprojecteurs</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50</div>
+                        <div class="stat-label">Enseignants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">550+</div>
+                        <div class="stat-label">postes (fixes et portables)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Salles informatiques</div>
+                    </div>
+                </div>
+                
+                <div class="organisation-structure">
+                    <h4>Structure du service :</h4>
+                    <ul>
+                        <li><strong>14 personnes</strong> réparties sur 3 sites</li>
+                        <li>1 équipes de recherche Développement</li>
+                        <li>Renouvellement du matériel tous les <strong>7 ans</strong></li>
+                        <li>Gestion des tickets via <strong>GLPI</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Fonction -->
+<section id="fonction" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Fonction</h2>
+        
+        <div class="fonction-content">
+            <p>En tant que technicien systèmes et réseaux, mes missions sont les suivantes :</p>
+            
+            <div class="missions-grid">
+                <div class="mission-card">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Maintenance des postes</h3>
+                    <p>Administration et maintenance d'environ 550 postes de travail</p>
+                </div>
+                
+                <div class="mission-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Gestion réseau</h3>
+                    <p>Brassage, configuration de ports, VLAN et optimisation des performances</p>
+                </div>
+                
+                <div class="mission-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Support utilisateur</h3>
+                    <p>Assistance technique et formation aux outils internes</p>
+                </div>
+                
+                <div class="mission-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Audiovisuel</h3>
+                    <p>Gestion des vidéoprojecteurs et salles équipées</p>
+                </div>
+                
+                <div class="mission-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Déploiement</h3>
+                    <p>Déploiement d'images système et logiciels via WAPT et FOG</p>
+                </div>
+                
+                <div class="mission-card">
+                    <i class="fas fa-terminal"></i>
+                    <h3>Automatisation</h3>
+                    <p>Développement de scripts</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Section Missions -->
+    <section id="missions" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Mes Missions</h2>
+            
+            <div class="missions-accordion">
+                <div class="mission-item">
+                    <button class="mission-title">
+                        <i class="fas fa-wrench"></i>
+                        <span>Maintenance et Réparation</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mission-content">
+                        <ul>
+                            <li>Diagnostic et réparation matériel (PC fixe, portable, imprimante, périphériques, téléphone) et logiciels</li>
+                            <li>Mises à niveau de composants (RAM, disques durs, alimentation, cartes réseau)</li>
+                            <li>Tests et validations des matériels avant remise en service</li>
+                            <li>Maintenance de 550 postes (Windows & MacOS)</li>
+                            <li>Déploiement d'images système via WAPT et FOG</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mission-item">
+                    <button class="mission-title">
+                        <i class="fas fa-network-wired"></i>
+                        <span>Gestion du réseau</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mission-content">
+                        <ul>
+                            <li>Configuration des switchs et VLANs</li>
+                            <li>Brassage des salles informatiques</li>
+                            <li>Optimisation des performances réseau</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mission-item">
+                    <button class="mission-title">
+                        <i class="fas fa-headset"></i>
+                        <span>Support utilisateur</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mission-content">
+                        <ul>
+                            <li>Formation des utilisateurs aux outils</li>
+                            <li>Résolution des incidents (niveau 1 et 2)</li>
+                            <li>Rédaction de documentation technique</li>
+                            <li>Assistance aux utilisateurs pour la résolution des problèmes</li>
+                            <li>Prise en main à distance</li>
+                            <li>Prise en charge des tickets d'incident via GLPI</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mission-item">
+                    <button class="mission-title">
+                        <i class="fas fa-terminal"></i>
+                        <span>Automatisation des tâches</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mission-content">
+                        <ul>
+                            <li>Développement de scripts PowerShell</li>
+                            <li>Automatisation des déploiements</li>
+                            <li>Maintenance des scripts existants</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mission-item">
+                    <button class="mission-title">
+                        <i class="fas fa-laptop-house"></i>
+                        <span>Gestion du Parc</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mission-content">
+                        <ul>
+                            <li>Administration des équipements informatiques</li>
+                            <li>Inventaire matériel et logiciel dans GLPI</li>
+                            <li>Renouvellement du matériel tous les 7 ans</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="mission-item">
+                    <button class="mission-title">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Sécurisation des Systèmes</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mission-content">
+                        <ul>
+                            <li>Configuration par GPO des Windows Defender (pare-feu, antivirus)</li>
+                            <li>Contrôle et restriction des accès aux données sensibles</li>
+                            <li>Sauvegarde et restauration des données</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section">
+        <div class="container">
+            <h2 class="section-title">Projets Réalisés</h2>
+            
+            <div class="projets-grid">
+                <!-- Projet 1 -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="assets/images/projet-deploiement.jpg" alt="Déploiement WAPT">
+                    </div>
+                    <div class="projet-content">
+                        <h3>Optimisation des déploiements avec WAPT</h3>
+                        <div class="projet-details">
+                            <p><strong>Contexte :</strong> Rationalisation du processus de déploiement des postes</p>
+                            <p><strong>Actions :</strong></p>
+                            <ul>
+                                <li>Création de paquets WAPT pour les logiciels métiers</li>
+                                <li>Automatisation des installations</li>
+                                <li>Réduction du temps de déploiement de 40%</li>
+                            </ul>
+                            <div class="technologies">
+                                <span>WAPT</span>
+                                <span>PowerShell</span>
+                                <span>Windows</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="assets/images/projet-script.jpg" alt="Script PowerShell">
+                    </div>
+                    <div class="projet-content">
+                        <h3>Script d'inventaire automatique</h3>
+                        <div class="projet-details">
+                            <p><strong>Contexte :</strong> Besoin de mise à jour régulière de l'inventaire</p>
+                            <p><strong>Actions :</strong></p>
+                            <ul>
+                                <li>Développement d'un script PowerShell</li>
+                                <li>Export des données vers GLPI</li>
+                                <li>Gain de temps : 10h/semaine</li>
+                            </ul>
+                            <div class="technologies">
+                                <span>PowerShell</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="assets/images/project2.jpg" alt="Borne de consultation">
+                    </div>
+                    <div class="projet-content">
+                        <h3>Maquette borne de consultation</h3>
+                        <div class="projet-details">
+                            <p><strong>Contexte :</strong> Création d'une maquette fonctionnelle pour borne interactive</p>
+                            <p><strong>Actions :</strong></p>
+                            <ul>
+                                <li>Développement de l'interface utilisateur</li>
+                                <li>Intégration des fonctionnalités tactiles</li>
+                                <li>Tests utilisateurs</li>
+                            </ul>
+                            <div class="technologies">
+                                <span>PXE</span>
+                                <span>FOG</span>
+                                <span>consultation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 4 -->
+                <div class="projet-card">
+                    <div class="projet-image">
+                        <img src="assets/images/project3.jpg" alt="Sécurité réseau">
+                    </div>
+                    <div class="projet-content">
+                        <h3>Skynet</h3>
+                        <div class="projet-details">
+                            <p><strong>Contexte :</strong> Participation à la sécurisation des connexions réseaux</p>
+                            <p><strong>Actions :</strong></p>
+                            <ul>
+                                <li>Configuration des règles de pare-feu</li>
+                                <li>Mise en place de VPN</li>
+                                <li>Monitoring des connexions</li>
+                            </ul>
+                            <div class="technologies">
+                                <span>Firewall</span>
+                                <span>VPN</span>
+                                <span>Réparation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Veille -->
+    <section id="veille" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Veille Technologique</h2>
+            <div class="veille-content">
+                <p>Je reste informé des évolutions technologiques en matière de cybersécurité, de maintenance informatique et d'optimisation des infrastructures IT.</p>
+                <h3>Sources principales :</h3>
+                <div class="sources-grid">
+                    <div class="source-card">
+                        <i class="fas fa-globe"></i>
+                        <h4>Sites spécialisés</h4>
+                        <ul>
+                            <li>ZDNet</li>
+                            <li>LeMagIT</li>
+                            <li>01Net</li>
+                        </ul>
+                    </div>
+                    <div class="source-card">
+                        <i class="fas fa-comments"></i>
+                        <h4>Forums techniques</h4>
+                        <ul>
+                            <li>Stack Overflow</li>
+                            <li>Reddit IT</li>
+                        </ul>
+                    </div>
+                    <div class="source-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Formations</h4>
+                        <ul>
+                            <li>Certifications en ligne</li>
+                            <li>MOOC</li>
+                            <li>Tutoriels spécialisés</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="veille-example">
+                    <h3>Dernières veilles effectuées :</h3>
+                    <div class="veille-items">
+                        <div class="veille-item">
+                            <h4>Nouvelles vulnérabilités Windows</h4>
+                            <p class="veille-date">15/10/2023</p>
+                            <p class="veille-source">Source : ZDNet</p>
+                            <a href="#" class="veille-link">Lire l'article <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <div class="veille-item">
+                            <h4>Évolutions des solutions de virtualisation</h4>
+                            <p class="veille-date">08/10/2023</p>
+                            <p class="veille-source">Source : LeMagIT</p>
+                            <a href="#" class="veille-link">Lire l'article <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="formContact">
+                        <div class="form-group">
+                            <label for="nom">Nom complet</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Envoyer</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Coordonnées</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>farajayed8@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+33 7 62 19 59 00</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bourg-en-Bresse, France</span>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>QASSAB Faraj</h3>
+                    <p>Technicien Systèmes & Réseaux en Alternance</p>
+                    <p>BTS SIO SISR - IUT Lyon 1</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#formation">Formation</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#entreprise">Entreprise</a></li>
+                        <li><a href="#fonction">Fonction</a></li>
+                        <li><a href="#missions">Missions</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-legal">
+                    <p>&copy; 2023 Tous droits réservés</p>
+                    <p>Portfolio professionnel</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+</html>
